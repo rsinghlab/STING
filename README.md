@@ -6,7 +6,7 @@ STING incorporates both graphs generated from the spatial proximity of tissue lo
 
 ![STING Framework Overview](./STING Framework.png)
 
-##Requirements
+## Requirements
 We suggest generating an environment (such as conda) to run the code. We have provided the requirements in requirements.txt.
 
 You can create a conda environment directly by running this line in the shell.
