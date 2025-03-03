@@ -4,7 +4,7 @@ STING incorporates both graphs generated from the spatial proximity of tissue lo
 
 [Preprint](https://www.biorxiv.org/content/10.1101/2025.02.03.636316v1.abstract) is available.
 
-![STING Framework Overview](./STING Framework.png)
+![STING Framework Overview](STING Framework.png)
 
 ## Requirements
 We suggest generating an environment (such as conda) to run the code. We have provided the requirements in requirements.txt.
