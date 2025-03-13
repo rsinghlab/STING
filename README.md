@@ -13,3 +13,6 @@ You can create a conda environment directly by running this line in the shell.
 ```
 conda create --name <env_name> --file requirements.txt
 ```
+
+## Downloading Datasets
+We use .h5ad files for our model. Annotated datasets used in the paper are available for download [here](sdmbench.drai.cn).
