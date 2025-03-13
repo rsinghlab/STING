@@ -1,4 +1,4 @@
-#This code has been partly copied from https://github.com/JinmiaoChenLab/GraphST since STING uses GraphST as the outer GNN
+#This code has been partly adapted from https://github.com/JinmiaoChenLab/GraphST since STING uses GraphST as the outer GNN
 
 
 import torch
