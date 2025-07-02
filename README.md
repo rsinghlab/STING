@@ -16,7 +16,7 @@ conda create --name <env_name> --file requirements.txt
 
 ## Downloading and Using Datasets
 We use .h5ad files for our model. Annotated datasets used in the paper are available for download [here](sdmbench.drai.cn), [here](https://cellxgene.cziscience.com/collections/0cca8620-8dee-45d0-aef5-23f032a5cf09), and [here](https://db.cngb.org/stomics/datasets/STDS0000223/summary).
-To use your own spatial transcriptomics file, use anndata to read the file and store it in an anndata object. The anndata object (named adata in the tutorial) should be formatted with adata.X containing the raw counts and adata.obsm\['spatial'\] containing the spatial locations of the spots.
+To use your own spatial transcriptomics file, use anndata to read the file and store it in an anndata object. The anndata object (named `adata` in the tutorial) should be formatted with `adata.X` containing the raw counts and `adata.obsm['spatial']` containing the spatial locations of the spots.
 
 ## Tutorial
 To see how to use STING to generate embeddings, please refer to tutorial.ipynb.
