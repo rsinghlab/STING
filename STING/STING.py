@@ -26,7 +26,7 @@ class STING():
         epochs=900, 
         dim_input=3000,
         dim_output=64,
-        random_seed = 2,
+        random_seed = 23,
         alpha = 10,
         beta = 1
         ):

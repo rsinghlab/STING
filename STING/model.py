@@ -19,12 +19,12 @@ class inner_GNN(torch.nn.Module):
         self.n_hidden = 1
         self.num_genes = num_genes
 
-        self.conv_first = GATv2Conv(num_node_features, self.n_hidden,weight_initializer = None) #kaiming_uniform
+        self.conv_first = GATv2Conv(num_node_features, self.n_hidden) #kaiming_uniform
 
         self.bn1 = BatchNorm(self.n_hidden)
         
         
-        self.conv_last = GATv2Conv(self.n_hidden, 1,weight_initializer = None)
+        self.conv_last = GATv2Conv(self.n_hidden, 1)
         self.bn2 = BatchNorm(1)
         
         self.device = device

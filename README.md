@@ -7,11 +7,30 @@ STING incorporates both graphs generated from the spatial proximity of tissue lo
 ![STING Framework Overview](https://github.com/rsinghlab/STING/blob/main/STING%20Framework.png?raw=true)
 
 ## Requirements
-We suggest generating an environment (such as conda) to run the code. We have provided the requirements in requirements.txt.
+The model requires the following modules and versions - 
 
-You can create a conda environment directly by running this line in the shell.
+PyTorch >= 2.0.1
+
+PyTorch Geometric >= 2.3.1
+
+scanpy >= 1.9.1
+
+Numpy < 2.0.0
+
+Python Optimal Transport >= 0.9.1
+
+Scikit-learn >= 1.2.2
+
+
+We suggest generating an environment (such as conda) to run the code. You can use the given requirements.txt file to create a new environment. If it does not work, you can create the required conda environment directly by running the following lines sequentially in the shell.
 ```
-conda create --name <env_name> --file requirements.txt
+conda create --name <env_name> python==3.11
+conda activate <env_name>
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install torch_geometric
+pip install scanpy
+pip install POT
+pip install "numpy<2"
 ```
 
 ## Downloading and Using Datasets
