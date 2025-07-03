@@ -39,4 +39,4 @@ To use your own spatial transcriptomics file, use anndata to read the file and s
 To see how to use STING to generate embeddings, please refer to tutorial.ipynb.
 
 ## Bugs and Suggestions
-Please report any bugs, problems, suggestions, or requests as a [Github issue](https://github.com/rsinghlab/STING/issues).
+Please report any bugs, problems, suggestions, or requests as a Github issue.
