@@ -2,7 +2,6 @@
 
 STING incorporates both graphs generated from the spatial proximity of tissue locations (or spots) and spot-specific graphs for related genes. This feature allows STING to better distinguish between clusters and identify meaningful gene-gene relations for knowledge discovery. It is a nested GNN framework that simultaneously models gene-gene and spatial relations. Using the gene expression, we generate a spot-specific gene-gene co-expression graph. We implement an inner GNN for these graphs to generate embeddings for each location. Next, we utilize these embeddings as features in a sample-wide graph generated using spatial information. We implement an outer GNN for this graph to reconstruct the original gene expression data. Finally, STING is trained end-to-end to generate embeddings that capture gene-gene and spatial information, which we input to a clustering algorithm to produce the spatial clusters. Experiments for 45 samples across 9 datasets and 5 spatial sequencing technologies show that STING outperforms the existing state-of-the-art techniques.
 
-![STING Framework Overview](https://github.com/rsinghlab/STING/blob/main/STING%20Framework.png?raw=true)
 
 ## Requirements
 The model requires the following modules and versions - 
