@@ -32,7 +32,7 @@ pip install "numpy<2"
 ```
 
 ## Downloading and Using Datasets
-We use .h5ad files for our model. Annotated datasets used in the paper are available for download [here](https://cellxgene.cziscience.com/collections/0cca8620-8dee-45d0-aef5-23f032a5cf09) (MERMB), [here](https://db.cngb.org/stomics/datasets/STDS0000223/summary) (10xHK), and [here](sdmbench.drai.cn) (all others). The datasets, their ID and other details as displayed in the manuscript are tabulated below.
+We use .h5ad files for our model. Annotated datasets used in the paper are available for download [here](https://cellxgene.cziscience.com/collections/0cca8620-8dee-45d0-aef5-23f032a5cf09) (MERMB), [here](https://db.cngb.org/stomics/datasets/STDS0000223/summary) (10xHK), and [here](http://sdmbench.drai.cn) (all others). The datasets, their ID and other details as displayed in the manuscript are tabulated below.
 
 | Dataset ID | Technology  | Sample Count | Cluster Count | Spot Count     | Gene Count | Species | Tissue                |
 |------------|-------------|--------------|----------------|----------------|------------|---------|------------------------|
