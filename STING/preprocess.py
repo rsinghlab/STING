@@ -180,3 +180,31 @@ def get_gene_graph_cluster(features, avg_neigh = 7, met = 'correlation'):
     
     return edge_index_inner#, edge_attr
     
+def refine_label(adata, radius=50, key='clusters'):
+    n_neigh = radius
+    new_type = []
+    old_type = adata.obs[key].values
+    
+    #calculate distance
+    position = adata.obsm['spatial']
+    distance = ot.dist(position, position, metric='euclidean')
+           
+    n_cell = distance.shape[0]
+    
+    for i in range(n_cell):
+        vec  = distance[i, :]
+        index = vec.argsort()
+        neigh_type = []
+        for j in range(1, n_neigh+1):
+            neigh_type.append(old_type[index[j]])
+        max_type = max(neigh_type, key=neigh_type.count)
+        new_type.append(max_type)
+        
+    new_type = [str(i) for i in list(new_type)]    
+    #adata.obs['label_refined'] = np.array(new_type)
+    
+    return new_type
+
+def cluster(adata, key='clusters'):
+    adata.obs[key] = adata.obs[key].astype('category')
+    adata.obs[key] = refine_label(adata, 50, key=key)
