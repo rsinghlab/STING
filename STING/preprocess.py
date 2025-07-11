@@ -205,6 +205,6 @@ def refine_label(adata, radius=50, key='clusters'):
     
     return new_type
 
-def cluster(adata, key='clusters'):
+def cluster(adata, radius=50, key='clusters'):
     adata.obs[key] = adata.obs[key].astype('category')
-    adata.obs[key] = refine_label(adata, 50, key=key)
+    adata.obs[key] = refine_label(adata, radius, key=key)
