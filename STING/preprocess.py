@@ -20,6 +20,12 @@ import torch_geometric
 from torch_geometric.data import Data
 
 
+def subsample(adata, n_cells = 5000):
+    rng = np.random.default_rng()
+    adata1 = adata[rng.choice(adata1.shape[0], n_cells, replace = False)]
+    return adata1
+
+
 def permutation(feature):
     # fix_seed(FLAGS.random_seed) 
     ids = np.arange(feature.shape[0])
